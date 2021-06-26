@@ -3,8 +3,8 @@ import { StarFilled } from '@ant-design/icons';
 import './CheckoutProduct.css';
 import { useStateValue } from './StateProvider';
 
-function CheckoutProduct({id, title, image, price, rating}) {
-    const [ { basket }, dispatch] = useStateValue();
+function CheckoutProduct({ id, title, image, price, rating, hideButton }) {
+    const [{ basket }, dispatch] = useStateValue();
 
     //console.log(id, title, image, price, rating);
 
@@ -18,7 +18,7 @@ function CheckoutProduct({id, title, image, price, rating}) {
     return (
         <div className="checkoutProduct">
             <img className="checkoutProduct__image" src={image} alt="" />
-            
+
             <div className="checkoutProduct__info">
                 <p className="checkoutProduct__title">{title}</p>
 
@@ -36,8 +36,10 @@ function CheckoutProduct({id, title, image, price, rating}) {
                             ))
                     }
                 </div>
+                {!hideButton && (
+                    <button onClick={removeFromBasket}>Remove from basket</button>
+                )}
 
-                <button onClick={removeFromBasket}>Remove from basket</button>
             </div>
         </div>
     )
