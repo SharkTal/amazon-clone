@@ -2,8 +2,6 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: darkgray 1px solid;
-    border-radius: 10px;
 }
 
 .checkoutProduct__image {
