@@ -9,9 +9,9 @@
 <h4>This project follows https://www.youtube.com/watch?v=RDV3Z1KCBvo instruction.</h4>
 
 <h1>Running Loclly</h1>
-git clone https://github.com/SharkTal/amazon-clone.git
-npm install
-npm start
-http://localhost:3000/
+<p>git clone https://github.com/SharkTal/amazon-clone.git</p>
+<p>npm install</p>
+<p>npm start</p>
+<p>http://localhost:3000/</p>
 
 
